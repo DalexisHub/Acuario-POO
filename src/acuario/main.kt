@@ -23,6 +23,19 @@ fun construirAcuario() {
     miTorre.imprimirTamano()
 }
 
+fun crearPeces() {
+    val Tiburon = Tiburon()
+    val PezPayaso = PezPayaso()
+
+    println("El color del tiburon es ${Tiburon.color}")
+    println("El color del pez payaso es ${PezPayaso.color}")
+
+    println("\nAcciones de los peces:")
+    Tiburon.comer()
+    PezPayaso.comer()
+}
+
 fun main() {
     construirAcuario()
+    crearPeces()
 }
